@@ -1,0 +1,36 @@
+31 Oktober 2023 - IoT
+
+Keadaan Siswa
+S:
+I:
+A:
+
+
+Agenda
+ Tugas Project
+  Proposal project: contoh format akan dishare di elearning
+   Latar Belakang
+   Tujuan
+   Manfaat
+
+  Landasan Teori
+   * kajian teori yang relevan dengan project
+     Contoh: Smart Lamp
+      Arduino Digital I/O
+      Relay
+      Arduino
+      
+  Desain Project
+  Rencana Kerja
+  Jadwal Kerja
+
+
+ laporan
+   Proposal
+   Hasil
+
+ Next Material: Platform IoT
+  >>>ThingSpeak
+    >>tujuan
+    >>mempublish hasil sensor ke public
+      Over Internet
