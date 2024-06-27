@@ -198,15 +198,14 @@ class KategoriController extends Controller
      */
     public function destroy($id): RedirectResponse
     {
-         //get product by ID
-         $rsetKategori = Kategori::findOrFail($id);
-
-          
-         //delete rsetKategori
-         $rsetKategori->delete();
- 
-         //redirect to index
-         return redirect()->route('kategori.index')->with(['success' => 'Data Berhasil Dihapus!']);
+        
+         if (DB::table('barang')->where('kategori_id', $id)->exists()){
+            return redirect()->route('kategori.index')->with(['Gagal' => 'Data Gagal Dihapus!']);
+        } else {
+            $rsetKategori = Kategori::find($id);
+            $rsetKategori->delete();
+            return redirect()->route('kategori.index')->with(['success' => 'Data Berhasil Dihapus!']);
+        }
     }
 
     public function test(){

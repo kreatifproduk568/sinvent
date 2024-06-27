@@ -17,6 +17,7 @@ class Kategori extends Model
     // menggunakan property $fillable
     // $fillable property bertipe array, berisi data field-field table yang CRUD
     // Scope akses dibatasi hanya local satu class saja dengan protected
+    // table kategori field yang bisa dimanipulasi: deskripsi, kategori
     //protected $fillable = ["deskripsi", "kategori"];
     protected $fillable = ["deskripsi", "kategori"];
 }
